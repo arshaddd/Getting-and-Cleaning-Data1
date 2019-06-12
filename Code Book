@@ -3,3 +3,27 @@ The run_analysis.R script performs the data preparation, followed by 5 requires 
 1.      Dataset Source
                Downloaded and then extracted from UCI HAR DataSet
 2.      Assigning veriables to Data    
+                features <- features.txt: 561 row n 2 cols
+                selected from Database from accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ.
+                
+                activities  <- activities_labels.txt: 6 rows and 2 cols
+                it is used when corresponding measurements were taken and its labels
+                
+                subject_test <- subject_test.txt: 2947 rows n 1 col.
+                contains test data of 9/30 volunteer 
+                
+                x_test <- test/x_test.txt: 2947 rows n 561 cols.
+                contain records
+                y_test <- test/y_test.txt: 2947 rows n 1 col.
+                contain test data of activities code labels
+                
+                subject_train <- test/x_train.txt: 7352 rows n 1 col.
+                contain train data of 21/30 volunteer being observed
+                
+                x_train <- test/x_train.txt: 7352 rows n 561 cols.
+                contain  the record of features train data
+                y_train <- test/y_train.txt: 7352 rows n 1 col.
+                contain train data of activities code labels
+ 
+ 3.     Merges the traning and the test sets to create one data set
+                                                 
