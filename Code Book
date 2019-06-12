@@ -1,0 +1,5 @@
+The run_analysis.R script performs the data preparation, followed by 5 requires steps and 6th step used for final results
+
+1.      Dataset Source
+               Downloaded and then extracted from UCI HAR DataSet
+2.      Assigning veriables to Data    
