@@ -1,3 +1,23 @@
+       library(dplyr)   # loading required Packages
+
+     # Downloading the DataSet
+      
+       FinalData <- "Coursera_DS3_Final.zip"
+     
+     # Checking if file already exists
+       
+       if(!file.exists(FinalFata))  {
+              fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+              download.file(fileURL, FinalData, method = "curl")
+              }
+
+     # checking if folder exists
+       
+      if(!file.exists("UCI HAR Dataset"))  {
+             unzip(FinalData)
+}
+
+       
        # Step 1  Merges the Training and test seyt to create the one data set.
 
 X <- rbind(x_train, x_test)
