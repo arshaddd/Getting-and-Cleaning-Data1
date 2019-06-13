@@ -26,6 +26,19 @@ The run_analysis.R script performs the data preparation, followed by 5 requires 
                 contain train data of activities code labels
  
  3.     Merges the traning and the test sets to create one data set
-                                                 
+                          
+                 X(10299 rows, 561 cols), created by using rbind() function by merging x_train and x_test
+               Y(10299 rows, 1 col), created by using rbind() function by merging y_train and y_test
+               Subject(10299 rows, 1 col), created by using rbind() function by merging subject_train and subject_test
+               Merged_Data(10299 rows, 563 cols), created by using rbind() function by merging subject, Y and X  x 
+
+4.     Extracts only the measurements on the mean n SD for each measurement
+               TidtData(10299 rows n 88 cols) is creating by using Merged_Data, measuring mean n SD for each       
+               measurement.
+5.     Assigning the Activities a name in Data Set.
+                
+               All no in code cols of TidtData Replsaced with Activities taken fron second cols of activity   
+                variable.     
+          
                                                  
                                                  
