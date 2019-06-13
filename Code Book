@@ -27,7 +27,7 @@ The run_analysis.R script performs the data preparation, followed by 5 requires 
  
  3.     Merges the traning and the test sets to create one data set
                           
-                 X(10299 rows, 561 cols), created by using rbind() function by merging x_train and x_test
+               X(10299 rows, 561 cols), created by using rbind() function by merging x_train and x_test
                Y(10299 rows, 1 col), created by using rbind() function by merging y_train and y_test
                Subject(10299 rows, 1 col), created by using rbind() function by merging subject_train and subject_test
                Merged_Data(10299 rows, 563 cols), created by using rbind() function by merging subject, Y and X  x 
@@ -35,10 +35,24 @@ The run_analysis.R script performs the data preparation, followed by 5 requires 
 4.     Extracts only the measurements on the mean n SD for each measurement
                TidtData(10299 rows n 88 cols) is creating by using Merged_Data, measuring mean n SD for each       
                measurement.
+
 5.     Assigning the Activities a name in Data Set.
                 
                All no in code cols of TidtData Replsaced with Activities taken fron second cols of activity   
-                variable.     
-          
-                                                 
+                variable.    
+                
+6.     Labeling the DS with variable names
+
+              Code cols in TidyData renamed into activities
+              All Acc in col name replaced by Accelerometer
+              All Gyro in col name replaced by Gyroscope
+              All Mag in col name replaced by Magnitude
+              All BodyBody in col name replaced by Body
+              All characterstarted with f replaced by frequency and t by Time.
+              
+7.     Using step 4 of DS
+
+             FinalData (180 rows n 88 cols) by summarizing TidyData taking the mean of each veriable for each 
+             activity n each subject using group_by by subject n activity
+             Export FinalData into GinalData.txt file.
                                                  
